@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import logo from './logo.svg';
+
 import './sass/App.scss';
 import Dashboard from "./components/dashboard/Dashboard";
 import Footer from "./components/footer/Footer";
@@ -12,8 +12,9 @@ import Portfolio from "./components/portfolio/Portfolio";
 
 const App = () => {
   return (
+    <Router>
     <div className="App">
-      <Router>
+     
         <Navbar />
         <Switch>
           <Route exact path="/" component={Home} />
@@ -23,8 +24,9 @@ const App = () => {
         </Switch>
 
       <Footer />
-      </Router>
+     
     </div>
+    </Router>
   );
 }
 

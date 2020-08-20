@@ -1,0 +1,23 @@
+nav {
+    height: 6vh;
+    display: flex;
+    align-items: center; 
+    padding: 0 2vw;  
+    justify-content: space-between;
+
+    .nav-wrapper{
+        display: flex;
+        justify-content: space-between;
+      .nav-link {
+          padding: 15px;
+          font-weight: 600;
+          text-decoration: none;
+          color: $mainColor;
+          font-size: 1.1em;
+      }
+    }
+
+    img {
+        height: 20px;
+    }
+}

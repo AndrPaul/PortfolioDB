@@ -1,0 +1,54 @@
+
+  .loginPage {
+        height: 100%;
+        width: 100vw;
+        background-image: url(../../images/login-page-background.jpg);
+        background-size: cover;
+        display: flex;
+        .half:first-of-type{
+            
+        }
+
+
+        .half{
+            width: 50vw;
+            height: 94vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            img{
+                height: 45px;
+            }
+            .loginForm{
+                height: 50vh;
+                width: 380px;
+                background-color: white;
+                border-radius: 5px;
+                padding: 40px;
+                h2{
+                    font-size: 2.5em;
+                    margin-bottom: 2vh;
+                }
+                p{
+                    font-weight: 500;
+                }
+
+                input {
+                    margin-top: 5vh;
+                    width: calc(380px - 40px);
+                    padding: 15px;
+                    border-width: 0 0 2px;
+                    border-color: $mainColor;
+                    
+                }
+
+                input:focus, textarea:focus, select:focus{
+                    outline: none;
+                }
+            }
+            
+        }
+    }
+
+

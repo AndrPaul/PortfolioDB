@@ -1,0 +1,12 @@
+.previews{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    .previewBox {
+    width: 250px;
+    height: 300px;
+    background: lighten($mainColor, 50%);
+    margin: 20px;
+    border-radius: 5px;
+    }
+}

@@ -1,0 +1,47 @@
+
+.header {
+
+
+
+    &.home {
+        background-image: url('../../images/background.jpg');
+        background-size: cover;
+        background-position: center;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        h1{
+            font-size: 4em;
+            display: flex;
+            flex-direction: column;
+            letter-spacing: 2px;
+            @include textShadow;
+
+            span{
+                font-size: 0.9em;
+                margin-top: 3vh;
+                letter-spacing: 1px;
+            }
+        }
+
+        p{
+            @include textShadow;
+            font-size: 1.1em;
+            margin-top:4vh;
+            color: darken($forthColor, 15%);
+        }
+
+    }
+
+}
+
+main {
+    h1{
+        margin: 10vh 0,
+    }
+    @include flexColCenter;
+    align-items: center;
+}

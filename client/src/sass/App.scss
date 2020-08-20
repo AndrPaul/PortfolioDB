@@ -1,3 +1,4 @@
+@import "./config";
 @import "../components/dashboard/dashboard";
 @import "../components/footer/footer";
 @import "../components/home/home";
@@ -5,4 +6,54 @@
 @import "../components/navbar/navbar";
 @import "../components/register/register";
 @import "../components/portfolio/portfolio";
-@import "./config"
+@import "../components/home/previewPortfolios/previewPortfolios";
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    min-height: calc(100vh - 6vh);
+}
+
+.App {
+    font-family: $mainFont;
+    color: $mainColor;
+}
+
+.header{
+    height: 70vh;
+    @include flexColCenter;
+  
+}
+
+.simpleLink {
+    color: $secondColor;
+    &:hover{
+        color: $thirdColor;
+    }
+    
+}
+
+.btn {
+
+     padding: 15px 30px;
+     min-width: 170px;
+     border-radius: 100px;
+     text-decoration: none;
+     font-weight: 400;
+     border: none;   
+
+     &.primary{
+         background: $secondColor;
+         margin-top: 8vh;
+         color: $forthColor;
+         font-size: 1.2em;
+
+         &:hover{
+             background: $thirdColor;
+             cursor: pointer;
+         }
+         
+     }
+}

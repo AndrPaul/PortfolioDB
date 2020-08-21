@@ -12,20 +12,9 @@
         justify-content: center;
         align-items: center;
         text-align: center;
+        height: 70vh;
 
-        h1{
-            font-size: 4em;
-            display: flex;
-            flex-direction: column;
-            letter-spacing: 2px;
-            @include textShadow;
-
-            span{
-                font-size: 0.9em;
-                margin-top: 3vh;
-                letter-spacing: 1px;
-            }
-        }
+       
 
         p{
             @include textShadow;
@@ -40,8 +29,21 @@
 
 main {
     h1{
-        margin: 10vh 0,
+        margin: 10vh 0 5vh 0;
+        font-size: 2.6em;
     }
     @include flexColCenter;
     align-items: center;
+
+    .search {
+        padding: 20px;
+        width: 60%;
+        margin: 0 0 10vh 0;
+        background-color: lighten($mainColor, 70%);
+        border: none;
+        border-radius: 80px;
+        outline: none;
+
+        @include boxShadow;
+    }
 }

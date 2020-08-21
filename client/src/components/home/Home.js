@@ -24,12 +24,13 @@ const Home = () => {
     return (
         <div className="container">
             <header className="header home">
-                <h1><span>Kickstart your career.</span>Create a beautiful portfolio.</h1>
+                <h1 className="title home"><span>Kickstart your career.</span>Create a beautiful portfolio.</h1>
                 <p>A fully responsive, single-page website to showcase your work.</p>
                 <Link className='btn primary' to='/login'>Get started ⟶</Link>
             </header>
             <main>
                 <h1>Get inspired, see what others have created.</h1>
+                <input name='search' className="search" type="search"/>
                 <PreviewPortfolios previewBox={prevData} />
             </main>
 

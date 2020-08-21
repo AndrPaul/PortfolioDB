@@ -11,7 +11,7 @@ const Login = () => {
                 <form className="loginForm">
                     <h2>Sign in</h2>
                     <p>New user? <Link className='simpleLink' to='/register'>Create account.</Link></p>
-                    <input type="text" name="username" placeholder="Username" />
+                    <input type="email" name="username" placeholder="E-mail" />
                     
                     <input type="password" name="password" placeholder="Password" />
                     <button className='btn primary' type="submit">Login</button>

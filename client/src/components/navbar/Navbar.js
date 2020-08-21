@@ -10,7 +10,7 @@ const Navbar = () => {
             
             <img src={Logo} alt=""/>
             <div className="nav-wrapper">
-             <MenuIcon />   
+               
             {NavItems.map((item, i) => {
                 return(
                 <NavLink key={i} className={item.cName} to={item.url}>{item.title}</NavLink>

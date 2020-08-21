@@ -7,6 +7,8 @@
 @import "../components/register/register";
 @import "../components/portfolio/portfolio";
 @import "../components/home/previewPortfolios/previewPortfolios";
+@import "../components/dashboard/portfolioItems/portfolioItems";
+@import "../components/create/create";
 *{
     margin: 0;
     padding: 0;
@@ -21,9 +23,27 @@
     color: $mainColor;
 }
 
+
+
 .header{
-    height: 70vh;
+    
     @include flexColCenter;
+    align-items: center;
+    
+    .title{
+        font-size: 4em;
+        display: flex;
+        flex-direction: column;
+        letter-spacing: 2px;
+        @include textShadow;
+        color: $forthColor;
+
+        span{
+            font-size: 0.9em;
+            margin-top: 3vh;
+            letter-spacing: 1px;
+        }
+    }
   
 }
 
@@ -43,6 +63,8 @@
      text-decoration: none;
      font-weight: 400;
      border: none;   
+     @include boxShadow;
+    
 
      &.primary{
          background: $secondColor;

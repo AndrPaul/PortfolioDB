@@ -1,6 +1,7 @@
 import React from 'react'
 import LogoLight from '../../images/logoLight.svg'
 import {Link} from 'react-router-dom'
+import { Formik, Field, Form } from "formik";
 const Register = () => {
     return (
         <div className='container loginPage'>
@@ -8,14 +9,22 @@ const Register = () => {
                 <img src={LogoLight} alt=""/>
             </div>
             <div className="half">
-                <form className="loginForm">
+            <Formik
+                    initialValues={{ email: "", password: "" }}
+                    onSubmit={async values => {
+                        await new Promise(resolve => setTimeout(resolve, 500));
+                        alert(JSON.stringify(values, null, 2));
+                    }}
+                >
+                    <Form className="loginForm">
                     <h2>Register</h2>
-                    <p>Already have an account ? <Link className='simpleLink' to='/login'>Sign in.</Link></p>
-                    <input type="email" name="username" placeholder="E-mail" />
-                    
-                    <input type="password" name="password" placeholder="Password" />
-                    <button className='btn primary' type="submit">Register</button>
-                </form>
+                    <p>Already have an account? <Link className='simpleLink' to='/login'>Sign in.</Link></p>
+                        
+                        <Field name="email" placeholder="E-mail" type="email" />
+                        <Field name="password" placeholder="Password" type="password" />
+                        <button className='btn primary' type="submit">Sign up</button>
+                    </Form>
+                </Formik>
             </div>
             
         </div>

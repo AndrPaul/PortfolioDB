@@ -8,7 +8,6 @@ import Home from "./components/home/Home";
 import Login from "./components/login/Login";
 import Navbar from "./components/navbar/Navbar";
 import Register from "./components/register/Register";
-import Create from "./components/create/Create";
 import Portfolio from "./components/portfolio/Portfolio";
 
 const App = () => {
@@ -22,7 +21,7 @@ const App = () => {
           <Route path="/login" component={Login} />
           <Route path="/register" component={Register} />
           <Route path="/dashboard" component={Dashboard} />
-          <Route path="/create" component={Create} />
+          
         </Switch>
 
       <Footer />

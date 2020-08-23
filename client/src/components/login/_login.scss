@@ -4,21 +4,25 @@
         width: 100vw;
         background-image: url(../../images/login-page-background.jpg);
         background-size: cover;
+        justify-content: center;
         display: flex;
         .half:first-of-type{
-            
+            justify-content: flex-end;
+            padding-right: 3%;
+            padding-left: 0;
         }
 
 
         .half{
-            width: 50vw;
+            width: 50%;
+            padding-left: 3%;
             height: 94vh;
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
             
             img{
-                height: 45px;
+                height: 40px;
             }
             .loginForm{
                 height: 50vh;

@@ -21,9 +21,9 @@ const Login = () => {
                     <h2>Sign in</h2>
                     <p>New user? <Link className='simpleLink' to='/register'>Create account.</Link></p>
                         
-                        <Field name="email" type="email" />
-                        <Field name="password" type="password" />
-                        <button className='btn primary' type="submit">Submit</button>
+                        <Field name="email" placeholder="E-mail" type="email" />
+                        <Field name="password" placeholder="Password" type="password" />
+                        <button className='btn primary' type="submit">Login</button>
                     </Form>
                 </Formik>
             </div>

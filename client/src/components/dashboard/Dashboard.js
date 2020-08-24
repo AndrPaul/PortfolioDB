@@ -9,13 +9,14 @@ const Dashboard = () => {
     Modal.setAppElement('#root')
 
     const pItemData = [
-        {name: 'Awesome Portfolio', category: 'tech'},
-        {name: 'Amazing title', category: 'food'},
-        {name: 'Photograph', category: 'photography'},
-        {name: 'name', category: 'tech'},
-        {name: 'name', category: 'tech'},
-        {name: 'name', category: 'tech'},
-        {name: 'name', category: 'tech'},
+        {name: 'Film director', category: 'film production'},
+        {name: 'Web designer', category: 'design'},
+        {name: 'Restaurant chef', category: 'food'},
+        {name: 'Portrait photographer', category: 'photography'},
+        {name: 'Back-end developer', category: 'programming'},
+        {name: 'Front-end developer', category: 'programming'},
+        // {name: 'Tech lead', category: 'technology'},
+        {name: 'Nude model', category: 'photography'}, /* why not? ))) */
         
     ]
 
@@ -36,14 +37,34 @@ const Dashboard = () => {
                             <Form>
                                 <div className="fieldWrap">
                                     <label for='portfolioName'>Portfolio name:</label>
-                                    <Field  className="field" type="text" name="portfolioName"></Field>
+                                    <Field  className="field" type="text" name="portfolioName" placeholder="Paul is awesome"></Field>
                                 </div>
                                 <div className="fieldWrap">
-                                    <label for='category'>Choose catergory</label>
+                                    <label for='category'>Choose category</label>
                                     <Field className="field" as="select" name="category">
                                         <option value="Web development">Web development</option>
                                         <option value="Web design">Web design</option>
                                         <option value="Graphic design">Graphic design</option>
+                                        <option value="UX designer">UX designer</option>
+                                        <option value="UI developer">UI developer</option>
+                                        <option value="SQL developer">SQL developer</option>
+                                        <option value="Software engineer">Software engineer</option>
+                                        <option value="DevOps engineer">DevOps engineer</option>
+                                        <option value="Data entry">Data entry</option>
+                                        <option value="Network administrator">Network administrator</option>
+                                        <option value="Information security analyst">Information security analist</option>
+                                        <option value="AI eengineer">AI engineer</option>
+                                        <option value="Cloud architect">Cloud architect</option>
+                                        <option value="IT manager">IT manager</option>
+                                        <option value="Application developer">Application developer</option>
+                                        <option value="Technical specialist">Technical specialist</option>
+                                        <option value="Help desk worker">Help desk worker</option>
+                                        <option value="Computer Scientist">Computer scientist</option>
+                                        <option value="IT Professional">It professional</option>
+                                        <option value="Senior programmer">Senior programmer</option>
+                                        <option value="Chief technology officer">Chief technology officer</option>
+                                        <option value="Chief information officer">Chief information officer</option>
+
                                     </Field>
                                 </div>
                                 <button className='btn primary'>Add portfolio</button>

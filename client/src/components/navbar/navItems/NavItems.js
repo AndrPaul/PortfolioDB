@@ -2,6 +2,11 @@ import Home from "../../home/Home"
 
 export const NavItems = [
     {
+        title: "Dashboard",
+        url: '/dashboard',
+        cName: 'nav-link'
+    },
+    {
         title: "Home",
         url: '/',
         cName: 'nav-link'

@@ -3,7 +3,7 @@ import {AiOutlineFolderAdd as AddIcon} from "react-icons/ai";
 import PortfolioItems from './portfolioItems/PortfolioItems'
 import Modal from 'react-modal'
 import { Formik, Field, Form } from "formik";
-import Modal_create from './modal_create_portfolio/Modal_create';
+import ModalCreate from './modal_create_portfolio/ModalCreate';
 const Dashboard = () => {
     
     const [modalIsOpen, setModalIsOpen] = useState(false)
@@ -33,7 +33,7 @@ const Dashboard = () => {
                         <p className='add-btn-info'>Create new portfolio</p>
                     </div>
                     <Modal className="Modal" overlayClassName="Overlay" isOpen={modalIsOpen}>
-                        <Modal_create />
+                        <ModalCreate />
                         <button className='close-btn' onClick={() => setModalIsOpen(false)}>X</button>
                     </Modal>
                     <PortfolioItems portfolioItem={pItemData} />

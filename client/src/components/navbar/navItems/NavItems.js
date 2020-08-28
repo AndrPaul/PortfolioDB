@@ -21,4 +21,9 @@ export const NavItems = [
         url: '/register',
         cName: 'nav-link'
     },
+    {
+        title: "Example",
+        url: '/fullview',
+        cName: 'nav-link'
+    },
 ]

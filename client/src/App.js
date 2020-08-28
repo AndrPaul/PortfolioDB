@@ -9,6 +9,7 @@ import Login from "./components/login/Login";
 import Navbar from "./components/navbar/Navbar";
 import Register from "./components/register/Register";
 import Portfolio from "./components/portfolio/Portfolio";
+import PortfolioEditFullView from "./components/dashboard/1_portfolio_edit_page/PortfolioEditFullView";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
           <Route path="/login" component={Login} />
           <Route path="/register" component={Register} />
           <Route path="/dashboard" component={Dashboard} />
+          <Route path="/fullview" component={PortfolioEditFullView} />
           
         </Switch>
 

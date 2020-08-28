@@ -1,0 +1,103 @@
+{
+  "examples": [
+    {
+      "id": 1,
+      "portfolioName": "werwer",
+      "category": "Development",
+      "profession": "web developer",
+      "about": "sdfsdfxcxcvxcv",
+      "projectsAmount": "1",
+      "scrollDirection": "horisontal"
+    },
+    {
+      "portfolioName": "",
+      "category": "Development",
+      "profession": "web developer",
+      "about": "",
+      "projectsAmount": "3",
+      "scrollDirection": "horisontal",
+      "id": 2
+    },
+    {
+      "portfolioName": "",
+      "category": "Development",
+      "profession": "web developer",
+      "about": "",
+      "projectsAmount": "3",
+      "scrollDirection": "horisontal",
+      "id": 3
+    },
+    {
+      "portfolioName": "sssdfasdfas",
+      "category": "Development",
+      "profession": "web developer",
+      "about": "",
+      "projectsAmount": "1",
+      "scrollDirection": "vertical",
+      "id": 4
+    },
+    {
+      "portfolioName": "",
+      "category": "Development",
+      "profession": "web developer",
+      "about": "",
+      "projectsAmount": "1",
+      "scrollDirection": "vertical",
+      "id": 5
+    },
+    {
+      "portfolioName": "",
+      "category": "Development",
+      "profession": "web developer",
+      "about": "",
+      "projectsAmount": "3",
+      "scrollDirection": "horisontal",
+      "id": 6
+    },
+    {
+      "portfolioName": "",
+      "category": "Development",
+      "profession": "web developer",
+      "about": "",
+      "projectsAmount": "3",
+      "scrollDirection": "horisontal",
+      "id": 7
+    },
+    {
+      "portfolioName": "",
+      "category": "Development",
+      "profession": "web developer",
+      "about": "",
+      "projectsAmount": "3",
+      "scrollDirection": "horisontal",
+      "id": 8
+    },
+    {
+      "portfolioName": "",
+      "category": "Development",
+      "profession": "web developer",
+      "about": "",
+      "projectsAmount": "3",
+      "scrollDirection": "horisontal",
+      "id": 9
+    },
+    {
+      "portfolioName": "",
+      "category": "Development",
+      "profession": "web developer",
+      "about": "",
+      "projectsAmount": "3",
+      "scrollDirection": "horisontal",
+      "id": 10
+    },
+    {
+      "portfolioName": "",
+      "category": "Development",
+      "profession": "web developer",
+      "about": "",
+      "projectsAmount": "3",
+      "scrollDirection": "horisontal",
+      "id": 11
+    }
+  ]
+}

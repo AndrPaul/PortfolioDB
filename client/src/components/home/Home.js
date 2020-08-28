@@ -6,7 +6,7 @@ const Home = () => {
 
 //Just dummy data for now
     const prevData = [
-        { title: 'title1' },
+        { title: 'why am i not beautiful' },
         { title: 'title1' },
         { title: 'title1' },
         { title: 'title1' },

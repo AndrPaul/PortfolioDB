@@ -1,6 +1,9 @@
 import React from 'react';
 // import Modal from 'react-modal';
 import { Formik, Field, Form } from "formik";
+import {v4 as uuidv4} from 'uuid';
+
+
 
 export const ModalCreate = () => {
     return (
@@ -10,10 +13,23 @@ export const ModalCreate = () => {
                         initialValues={{portfolioName:'',category:'Development',profession:'web developer',about:'',projectsAmount:'3',scrollDirection:'horisontal'}} 
                         onSubmit={(values, { setSubmitting }) => {
                                 setTimeout(() => {
-                                  console.log('this is an object ', values)
-                                  console.log('this is stringified data',JSON.stringify(values, null, 2));
+                                    fetch(`http://localhost:3004/examples/`,
+                                    {"body": JSON.stringify(values, null, 2),
+                                     "headers": {
+                                         "Accept": "application/json",
+                                         "Content-Type": "application/json"
+                                     }, "method": "Post"})
+                                     .then((response) => {
+                                     if (!response.ok) {
+                                        console.log("coudn't connect to database");
+                                    } else {
+                                        console.log("Your input is saved in DB. Continue editing")
+                                    }
+                                    return response.json();});
                                   setSubmitting(false);
-                                }, 100);}}> 
+                                }, 100);
+                                setTimeout(()=>{setModalIsOpen(false)},200);
+                                }}> 
                         {({values, isSubmitting}) => (
                             <Form>
                             <div className="fieldWrap">

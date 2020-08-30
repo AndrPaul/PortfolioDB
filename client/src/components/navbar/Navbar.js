@@ -38,42 +38,5 @@ function Navbar() {
       </>
     );
   }
-  
   export default Navbar;
   
-
-// const Navbar = () => {
-//     const [click, setClick] = useState(false);
- 
-//     const closeMobileMenu = () => setClick(false);
-//     const handleClick = () => setClick(!click);
-
-
-
-   
-//     return (
-//         <nav className='navbar'>
-//             <div className="navbar-container">
-//                 <Link to='/' className="navbar-logo"><img src={Logo} alt="portfolio-db-logo"/></Link>
-            
-//             <div className="menu-icon" onClick={handleClick}>
-//                 {click ? <CloseIcon /> : <OpenIcon />  }
-//             </div>
-//             <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-//             {NavItems.map((item, i) => {
-//                 return(
-//                     <li key={i} className="nav-item">
-//                         <NavLink key={i} className={item.cName} to={item.url}>{item.title}</NavLink>
-//                     </li>
-                
-//                 )
-//             })}
-//             </ul>
-//             </div>
-//         </nav>
-//     )
-// }
-
-// export default Navbar
-
-

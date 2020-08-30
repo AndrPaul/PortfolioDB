@@ -1,62 +1,62 @@
 
   .loginPage {
-        height: 100%;
-        width: 100%;
-        background-image: url(../../images/login-page-background.jpg);
-        background-size: cover;
-        justify-content: center;
-        display: flex;
-        overflow: hidden;
-        .half:first-of-type{
-            justify-content: flex-end;
-            padding-right: 3%;
-            padding-left: 0;
-        }
-
-
-        .half{
-            width: 50%;
-            padding-left: 3%;
-            height: 94vh;
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            
-            
-            img{
-                height: 40px;
-                width: 380px;
-            }
-            .loginForm{
-                height: 500px;
-                width: 380px;
-                background-color: white;
-                border-radius: 5px;
-                padding: 40px;
-                h2{
-                    font-size: 2.5em;
-                    margin-bottom: 2vh;
-                }
-                p{
-                    font-weight: 500;
-                }
-
-                input {
-                    margin-top: 5vh;
-                    width: 90%;
-                    padding: 15px;
-                    border-width: 0 0 2px;
-                    border-color: $mainColor;
-                    
-                    
-                }
-
-                input:focus, textarea:focus, select:focus{
-                    outline: none;
-                }
-            }
-            
-        }
+    height: 100%;
+    width: 100%;
+    background-image: url(../../images/login-page-background.jpg);
+    background-size: cover;
+    justify-content: center;
+    display: flex;
+    overflow: hidden;
+    .half:first-of-type{
+        justify-content: flex-end;
+        padding-right: 3%;
+        padding-left: 0;
     }
+
+
+    .half{
+        width: 50%;
+        padding-left: 3%;
+        height: 94vh;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        
+        
+        img{
+            height: 40px;
+            width: 380px;
+        }
+        .loginForm{
+            height: 500px;
+            width: 380px;
+            background-color: white;
+            border-radius: 5px;
+            padding: 40px;
+            h2{
+                font-size: 2.5em;
+                margin-bottom: 2vh;
+            }
+            p{
+                font-weight: 500;
+            }
+
+            input {
+                margin-top: 5vh;
+                width: 90%;
+                padding: 15px;
+                border-width: 0 0 2px;
+                border-color: $mainColor;
+                
+                
+            }
+
+            input:focus, textarea:focus, select:focus{
+                outline: none;
+            }
+        }
+        
+    }
+}
 
 

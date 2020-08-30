@@ -16,9 +16,7 @@ const Home = () => {
         { title: 'title1' },
         { title: 'title1' },
         { title: 'title1' },
-        { title: 'title1' },
-        { title: 'title1' },
-
+      
     ]
 
     return (
@@ -28,7 +26,7 @@ const Home = () => {
                 <p>A fully responsive, single-page website to showcase your work.</p>
                 <Link className='btn primary' to='/login'>Get started ⟶</Link>
             </header>
-            <main>
+            <main className="main home">
                 <h1>Get inspired, see what others have created.</h1>
                 <input name='search' className="search" type="search"/>
                 <PreviewPortfolios previewBox={prevData} />

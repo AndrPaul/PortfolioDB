@@ -8,7 +8,7 @@
 
     .title {
       &.dashboard {
-        margin-top: 15vh;
+        margin-top: 60px;
       }
     }
   }
@@ -87,7 +87,7 @@
     main {
       position: absolute;
       z-index: 1;
-      width: 80vw;
+      width: 80%;
       height: 50vh;
       background-color: $forthColor;
       z-index: 2;
@@ -98,18 +98,19 @@
       margin-right: auto;
       border-radius: 10px 10px 0 0;
       display: flex;
-      justify-content: flex-start;
+      justify-content: center;
       align-items: flex-start;
-      padding: 50px;
+      padding: 40px;
 
       .main-top {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+       
 
         .add-btn {
-          width: 350px;
-          height: 250px;
+          width: 310px;
+          height: 220px;
           background-color: $mainColor;
           color: lighten($mainColor, 70%);
           border: none;
@@ -117,7 +118,8 @@
           justify-content: center;
           align-items: center;
           border-radius: 10px;
-          margin: 10px;
+          margin: 25px;
+         
           @include boxShadow;
           &:hover {
               cursor: pointer;

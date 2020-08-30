@@ -1,23 +1,114 @@
-nav {
-    height: 6vh;
-    display: flex;
-    align-items: center; 
-    padding: 0 2vw;  
-    justify-content: space-between;
+.navbar {
+  background: $forthColor;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  padding: 0 5%;
 
-    .nav-wrapper{
-        display: flex;
-        justify-content: space-between;
+  .navbar-logo {
+    justify-self: start;
+    display: flex;
+    align-items: center;
+
+    cursor: pointer;
+    img {
+      height: 20px;
+    }
+  }
+
+  .menu-icon {
+    color: $mainColor;
+    display: none;
+  }
+
+  .nav-menu {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    list-style: none;
+    text-align: center;
+    justify-content: end;
+    
+
+    .nav-item {
+      display: flex;
+      align-items: center;
+      height: 60px;
+
       .nav-link {
-          padding: 15px;
-          font-weight: 600;
-          text-decoration: none;
-          color: $mainColor;
-          font-size: 1.1em;
+        color: $mainColor;
+        text-decoration: none;
+        padding-left: 60px;
+        font-weight: 600;
+        &:hover{
+          color: $secondColor;
+        }
       }
     }
+  }
+}
 
-    img {
-        height: 20px;
+@media screen and (max-width: 900px) {
+  .navbar {
+    .navbar-logo {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(25%, 90%);
     }
+
+    .menu-icon {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(-100%, 30%);
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 60px;
+        left: -100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+        grid-gap: 0px;
+    
+        .nav-item{
+          height: 60px;
+         
+          &:nth-child(even) {
+            background: $forthColor;
+          }
+            .nav-link {
+        text-align: center;
+        padding-left: 0px;
+       
+        width: 100%;
+        display: table;
+      }
+        }
+      }
+  }
+  .NavbarItems {
+    position: relative;
+  }
+
+  
+
+  .nav-menu.active {
+    background: lighten($mainColor, 70%);
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 99;
+  }
+
+  
 }

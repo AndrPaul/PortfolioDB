@@ -1,6 +1,6 @@
 
 .header {
-
+   
 
 
     &.home {
@@ -27,23 +27,30 @@
 
 }
 
-main {
-    h1{
-        margin: 10vh 0 5vh 0;
-        font-size: 2.6em;
-    }
-    @include flexColCenter;
-    align-items: center;
+.main {
 
-    .search {
-        padding: 20px;
-        width: 60%;
-        margin: 0 0 10vh 0;
-        background-color: lighten($mainColor, 70%);
-        border: none;
-        border-radius: 80px;
-        outline: none;
+    &.home {
+        h1{
+            margin: 10vh 0 5vh 0;
+            font-size: 2.6em;
+            text-align: center;
+        }
+        @include flexColCenter;
+        align-items: center;
+    
+        .search {
+            padding: 20px;
+            width: 60%;
+            margin: 0 0 10vh 0;
+            background-color: lighten($mainColor, 70%);
+            border: none;
+            border-radius: 80px;
+            outline: none;
+    
+            @include boxShadow;
+        }
 
-        @include boxShadow;
     }
+    
+   
 }

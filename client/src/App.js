@@ -8,7 +8,7 @@ import Home from "./components/home/Home";
 import Login from "./components/login/Login";
 import Navbar from "./components/navbar/Navbar";
 import Register from "./components/register/Register";
-import Portfolio from "./components/portfolio/Portfolio";
+import ScrollToTop from './ScrollToTop';
 
 const App = () => {
   return (
@@ -16,6 +16,7 @@ const App = () => {
     <div className="App">
      
         <Navbar />
+        <ScrollToTop />
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/login" component={Login} />

@@ -9,73 +9,134 @@
 @import "../components/home/previewPortfolios/previewPortfolios";
 @import "../components/dashboard/portfolioItems/portfolioItems";
 
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-    min-height: calc(100vh - 6vh);
+  min-height: calc(100vh - 60px);
 }
 
 .App {
-    font-family: $mainFont;
-    color: $mainColor;
+  font-family: $mainFont;
+  color: $mainColor;
 }
 
+.header {
+  padding: 60px 5%;
+  @include flexColCenter;
+  align-items: center;
 
+  .title {
+    font-size: 4em;
+    display: flex;
+    flex-direction: column;
 
-.header{
-    
-    @include flexColCenter;
-    align-items: center;
-    
-    .title{
-        font-size: 4em;
-        display: flex;
-        flex-direction: column;
-        letter-spacing: 2px;
-        @include textShadow;
-        color: $forthColor;
+    @include textShadow;
+    color: $forthColor;
 
-        span{
-            font-size: 0.9em;
-            margin-top: 3vh;
-            letter-spacing: 1px;
-        }
+    span {
+      font-size: 0.9em;
+      margin-top: 3vh;
     }
-  
+  }
 }
 
 .simpleLink {
-    color: $secondColor;
-    &:hover{
-        color: $thirdColor;
-    }
-    
+  color: $secondColor;
+  &:hover {
+    color: $thirdColor;
+  }
 }
 
 .btn {
+  padding: 15px 30px;
+  min-width: 170px;
+  border-radius: 100px;
+  text-decoration: none;
+  font-weight: 400;
+  border: none;
+  @include boxShadow;
 
-     padding: 15px 30px;
-     min-width: 170px;
-     border-radius: 100px;
-     text-decoration: none;
-     font-weight: 400;
-     border: none;   
-     @include boxShadow;
-    
+  &.primary {
+    background: $secondColor;
+    margin-top: 100px;
+    color: $forthColor;
+    font-size: 1.2em;
 
-     &.primary{
-         background: $secondColor;
-         margin-top: 30px;
-         color: $forthColor;
-         font-size: 1.2em;
+    &:hover {
+      background: $thirdColor;
+      cursor: pointer;
+    }
+  }
+}
 
-         &:hover{
-             background: $thirdColor;
-             cursor: pointer;
-         }
-         
-     }
+@media screen and (max-width: 900px) {
+  .header {
+    &.home {
+      height: 80vh;
+
+      .title {
+        font-size: 2.4em;
+
+        span {
+          font-size: 0.9em;
+          margin-top: 3vh;
+          letter-spacing: 1px;
+        }
+      }
+    }
+  }
+  .main {
+    &.home {
+      h1 {
+        font-size: 2em;
+      }
+
+      .search {
+        padding: 20px;
+        width: 90%;
+        margin: 0 0 10vh 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .loginPage {
+    @include flexColCenter;
+    overflow: hidden;
+
+    .half:first-of-type {
+      justify-content: center;
+      align-items: center;
+      padding-right: 0;
+      padding-left: 0;
+      margin: 10vh 0;
+    }
+
+    .half {
+      width: 100%;
+      padding-left: 0;
+      height: auto;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .loginPage {
+    .half:first-of-type {
+      img {
+        height: 30px;
+      }
+    }
+  }
+  .half {
+    .loginForm {
+      width: 80%;
+    }
+  }
 }

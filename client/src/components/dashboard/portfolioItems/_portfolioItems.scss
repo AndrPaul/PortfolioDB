@@ -1,10 +1,10 @@
 .item {
-    width: 350px;
-    height: 250px;
+    width: 310px;
+    height: 220px;
     background-color: lighten($mainColor, 70%);
     border: none;
     border-radius: 10px;
-    margin: 10px;
+    margin: 25px;
     @include flexColCenter;
     text-align: center;
     justify-content: space-between;
@@ -14,12 +14,12 @@
         justify-self: end;
     }
     .item-name {
-        font-size: 2em;
+        font-size: 1.6em;
         padding-top: 20px;
     }
 
     .item-category {
-        font-size: 1.2em;
+        font-size: 1.1em;
         margin-top: 20px;
     }
 

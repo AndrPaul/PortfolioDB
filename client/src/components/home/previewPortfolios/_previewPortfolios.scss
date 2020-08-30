@@ -1,6 +1,7 @@
 .previews{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     width: 80%;
     .previewBox {
     width: 250px;

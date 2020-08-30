@@ -1,11 +1,12 @@
 
   .loginPage {
         height: 100%;
-        width: 100vw;
+        width: 100%;
         background-image: url(../../images/login-page-background.jpg);
         background-size: cover;
         justify-content: center;
         display: flex;
+        overflow: hidden;
         .half:first-of-type{
             justify-content: flex-end;
             padding-right: 3%;
@@ -21,11 +22,13 @@
             justify-content: flex-start;
             align-items: center;
             
+            
             img{
                 height: 40px;
+                width: 380px;
             }
             .loginForm{
-                height: 50vh;
+                height: 500px;
                 width: 380px;
                 background-color: white;
                 border-radius: 5px;
@@ -40,10 +43,11 @@
 
                 input {
                     margin-top: 5vh;
-                    width: calc(380px - 40px);
+                    width: 90%;
                     padding: 15px;
                     border-width: 0 0 2px;
                     border-color: $mainColor;
+                    
                     
                 }
 
